@@ -1,0 +1,2 @@
+node imgwelcome.js
+PAUSE
