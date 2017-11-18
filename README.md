@@ -3,7 +3,7 @@ This project for imgwelcome in discord `JavaScript`.
 
 If you would like to be in coloring team ↙
 
-[![Discord Status](https://discord.gg/Mn3HJS6)](https://discord.gg/Mn3HJS6)
+[![build Status](https://discord.gg/Mn3HJS6)](https://discord.gg/Mn3HJS6)
 
 
 ## Installation
