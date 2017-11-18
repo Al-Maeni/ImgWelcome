@@ -34,7 +34,7 @@ ctx.beginPath();
 ctx.lineTo(50, 102);
 ctx.stroke();
 
-member.guild.channels.get("373537167940780034").sendFile(canvas.toBuffer());
+member.guild.channels.get("RoomId-Is-Here").sendFile(canvas.toBuffer());
 }).on('ready', () => {
     console.log(`Im ready ${client.user.username}`)
 });
