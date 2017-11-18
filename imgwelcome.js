@@ -1,6 +1,17 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
+client.on('ready',  () => {
+  console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'); 
+  console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'); 
+  console.log('~                ~  By : Coloring Team ~                     ~');
+  console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'); 
+  console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
+  console.log(`Logged in as  * [ "  " ] servers! [ " ${client.guilds.size} " ]`);
+client.user.setStatus("dnd");
+});
+
+
 client.on('guildMemberAdd', member => {
     var Canvas = require('canvas')
   , Image = Canvas.Image
