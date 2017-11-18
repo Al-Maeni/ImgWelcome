@@ -7,7 +7,6 @@ client.on('ready',  () => {
   console.log('~                ~  By : Coloring Team ~                     ~');
   console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'); 
   console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
-  console.log(`Logged in as  * [ "  " ] servers! [ " ${client.guilds.size} " ]`);
 client.user.setStatus("dnd");
 });
 
