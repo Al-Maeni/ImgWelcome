@@ -13,28 +13,29 @@ client.user.setStatus("dnd");
 
 client.on('guildMemberAdd', member => {
     var Canvas = require('canvas')
-  , Image = Canvas.Image
+  , Image = new Canvas.Image
+  , Image1 = new Canvas.Image(member.user.avatarURL)
   , canvas = new Canvas(450, 170)
   , ctx = canvas.getContext('2d');
   ctx.font = '30px Impact';
+  
+  
+Image.src = canvas.toBuffer();
+Image1.src = canvas.toBuffer();
 
-var back = new Image;
-back.src='https://cdn.discordapp.com/attachments/369892762377650187/381332109391822848/275810239.png';
-
-    console.log(back);
-     ctx.drawImage(back, 0,0, canvas.width,canvas.height);
-
+    console.log(Image);
+ctx.drawImage(Image, 0, 0, Image.width / 470, Image.height / 170);
+ctx.drawImage(Image1, 0, 0, Image1.width / 90, Image1.height / 50);
 ctx.fillText(member.user.username,90, 50);
-ctx.fillText('Welcome To Our Server', 50, 110);
+ctx.fillText('حياك الله منور السيرفر', 50, 110);
 
 
 ctx.beginPath();
 ctx.lineTo(50, 102);
 ctx.stroke();
 
-member.guild.channels.get("RoomId-Is-Here").sendFile(canvas.toBuffer());
+member.guild.channels.get("373537167940780034").sendFile(canvas.toBuffer());
 }).on('ready', () => {
     console.log(`Im ready ${client.user.username}`)
 });
-
 client.login('Token-Is-Here');             
