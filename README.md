@@ -22,7 +22,7 @@
 This project for imgwelcome in discord `JavaScript`.
 
 If you would like to be in coloring team ↙
-
+https://discord.gg/Mn3HJS6
 
 
 ## Installation
